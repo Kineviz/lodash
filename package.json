@@ -1,17 +1,27 @@
 {
-  "name": "lodash",
+  "name": "@kineviz/lodash",
   "version": "4.17.21",
   "description": "Lodash modular utilities.",
-  "keywords": "modules, stdlib, util",
-  "homepage": "https://lodash.com/",
-  "repository": "lodash/lodash",
+  "homepage": "https://github.com/kineviz/lodash",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kineviz/lodash.git"
+  },
   "icon": "https://lodash.com/icon.svg",
   "license": "MIT",
   "main": "lodash.js",
   "author": "John-David Dalton <john.david.dalton@gmail.com>",
   "contributors": [
     "John-David Dalton <john.david.dalton@gmail.com>",
-    "Mathias Bynens <mathias@qiwi.be>"
+    "Mathias Bynens <mathias@qiwi.be>",
+    "Sean Li<lxx8585@qq.com>"
   ],
-  "scripts": { "test": "echo \"See https://travis-ci.org/lodash-archive/lodash-cli for testing details.\"" }
+  "scripts": { 
+    "test": "echo \"See https://travis-ci.org/lodash-archive/lodash-cli for testing details.\"",
+    "release": "npm publish --access=public --scope=@kineviz --registry=https://registry.npmjs.org"
+   },
+   "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
 }
